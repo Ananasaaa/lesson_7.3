@@ -1,66 +1,26 @@
 
 function cycleFunc() {
 
-    let num;
+  let num;
     
     for(let i = 0; i < 10; i++){
 
         num = prompt('input int...');
     
-        if(num < 100) {
+        if (num < 100) {
             continue;
-        } else {
-            console.log(num);
-            break;
         }
+        else if (typeof num === 'string') {
+            return console.log(num);
+        } 
+        else if (num >= 100) {
+            return console.log(num);
+        }
+  
     }
-    }
+    
+    return console.log(num);
+    
+};
     
     cycleFunc();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// function loop() {
-
-//     let n;
-
-//     for (let i = 0; i < 10; i++) {
-
-//         n = prompt('input integer more than hun...');
-
-//         if(n < 100){
-//             continue;
-//         }else{
-//             return console.log(n);
-//         };
-//     }
-    
-
-// }
-
-// loop();
