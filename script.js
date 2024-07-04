@@ -1,5 +1,5 @@
 
-function cycleFunc() {
+function getNum() {
 
   let num;
     
@@ -23,4 +23,4 @@ function cycleFunc() {
     
 };
     
-    cycleFunc();
+    getNum();
